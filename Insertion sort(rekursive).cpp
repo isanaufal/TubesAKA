@@ -13,8 +13,9 @@ cafe arrcaf[Nmax];       // Array kafe
 int n = 0;               // Jumlah data kafe
 
 cafe* descendingrekomen(cafe arrcaf[], int n) {
-    if (n <= 1) return arrcaf;
-
+    if (n <= 1) {
+        return arrcaf;
+    }
     // Urutkan n-1 elemen pertama
     descendingrekomen(arrcaf, n - 1);
 
